@@ -1,1 +1,0 @@
-void t_open();
