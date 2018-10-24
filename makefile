@@ -1,11 +1,8 @@
-all: main.o test_open.o
-	gcc -o Opener main.o test_open.o
+all: main.o
+	gcc -o Opener main.o
 
-main.o: main.c test_open.h
+main.o: main.c
 	gcc -c main.c
-
-test_open.o: test_open.c
-	gcc -c test_open.c
 
 run:
 	./Opener
